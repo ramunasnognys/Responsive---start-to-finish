@@ -1,9 +1,20 @@
+// 1. Hide nav-bar for responsive navigation
+// 2. Hide text on nav-bar
+// 3. Add animation
+// 4. Animate Hamburger cross on click
+// 5. Nav-bar list item ON-TAP fix
+  
 .main-nav
   background: $accent
   position: absolute
   top: 0
-  left: 0
+  left: 100% // * 1 *
   right: 0
+  font-size: 1.2rem
+
+  overflow: hidden // * 2 *
+
+  transition: all ease-in-out 250ms // * 3 *
 
   ul 
     display: flex
@@ -12,14 +23,60 @@
     text-align: center
     height: 100vh
     li 
-      flex-grow: 
       flex: 1 1 auto
       border-bottom: 1px solid rgba(0, 0, 0, .15)
       display: flex
-      align-items: center
-      justify-content: center
       
       a 
         color: $text-inverse
         text-decoration: none
+        flex-basis: 100% // * 5 *
+        display: flex // * 5 *
+        align-items: center // * 5 *
+        justify-content: center // * 5 *
 
+        &:hover
+          background: rgba(0, 0, 0, .10)
+
+      
+  &.is-open
+    left: 0
+
+
+
+// Hamburger menu
+
+.nav-toggle
+  display: block
+  padding: 1em
+  position: absolute
+  right: 1em
+  top: 1em
+  cursor: pointer
+
+
+
+.hamburger, .hamburger::before, .hamburger::after
+  content: ''
+  display: block
+  width: 2em
+  height: 3px
+  background: $white
+  transition: all ease-in-out 250ms
+
+.hamburger::before 
+  transform: translateY(-6px)
+
+.hamburger::after 
+  transform: translateY(3px)
+
+// Hamburger Cross
+
+.hamburger.is-open // * 4 *
+  transform: rotate(45deg) 
+
+  &::after
+    transform: rotate(-90deg) translateX(3px)
+  
+  &::before
+    opacity: 0
