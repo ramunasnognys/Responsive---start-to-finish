@@ -317,10 +317,11 @@ template {
   box-sizing: border-box; }
 
 body {
-  color: #048ca8; }
+  color: #048ca8;
+  text-align: center; }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto; }
 
 .container {
@@ -332,6 +333,9 @@ img {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+h1 {
+  background: blue; }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 .75em; }
@@ -390,7 +394,18 @@ h2 {
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
+  .col .col--full {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
 
 .main-nav {
   background: #d31869;
@@ -480,6 +495,19 @@ h2 {
     transform: rotate(-90deg) translateX(3px); }
   .hamburger.is-open::before {
     opacity: 0; }
+
+.sales-points {
+  padding: 10vh 0; }
+
+.sales-point {
+  margin-bottom: 2.5em; }
+  .sales-point:first-of-type {
+    margin-top: 1.5em; }
+  .sales-point:last-child {
+    margin-bottom: 0; }
+
+.promo {
+  padding: 10vh 0; }
 
 .btn {
   display: inline-block;
