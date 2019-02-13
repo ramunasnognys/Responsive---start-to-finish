@@ -1,5 +1,7 @@
+// 1. Remove images from small devices
+
 *, *::before, *::after 
-    box-sizing: border-box
+  box-sizing: border-box
 
 body 
   color: $text-main
@@ -19,5 +21,10 @@ img
   padding: 0
   list-style: none  
 
-h1 
-  background: blue
+.lg-screen // 1
+  display: none
+
+.bg-primary
+  background: $main
+  color: $text-inverse
+  padding: 5em 2.5em
