@@ -4,7 +4,6 @@ Online tutorials from Youtube
 #### Technologies:
 ![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/HTML-50.png)
 ![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/css-50.png)
-![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/js-50.png)
 * SASS
 * BEM
 * Github
