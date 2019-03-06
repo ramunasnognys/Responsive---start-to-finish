@@ -1,15 +1,3 @@
-
-# Responsive---start-to-finish :framed_picture:
-### YouTube kursai
-#### Technologies:
-![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/HTML-50.png)
-![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/css-50.png)
-![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/js-50.png)
-#
-This is my **Image gallery** for my github projects.
-
-**Prepros** tool has been used for compiling SASS.
-
 # Responsive---start-to-finish :framed_picture:
 Online tutorials from Youtube
 
@@ -17,7 +5,13 @@ Online tutorials from Youtube
 ![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/HTML-50.png)
 ![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/css-50.png)
 ![GitHub Logo](https://github.com/ramunasnognys/images/blob/master/icons/js-50.png)
-SASS, Github
+* SASS
+* BEM
+* Github
+* Responsive design
+* Mobile first
+* Prepros SASS compiler
+
 #
 This is my **Side Pojects** for github.
 
